@@ -1,0 +1,35 @@
+app:
+  name: DracoPanel
+  url: http://localhost:8080
+  debug: true
+  key: base64:GENERATE_THIS_KEY_AFTER_INSTALL
+
+database:
+  connection: mysql
+  host: mysql
+  port: 3306
+  database: draco_panel
+  username: root
+  password: secret
+
+mail:
+  driver: smtp
+  host: smtp.mailtrap.io
+  port: 2525
+  username: null
+  password: null
+  encryption: null
+  from_address: null
+  from_name: DracoPanel
+
+cache:
+  driver: file
+
+session:
+  driver: file
+  lifetime: 120
+
+redis:
+  host: 127.0.0.1
+  password: null
+  port: 6379
